@@ -17,12 +17,12 @@ NeoSR + packaging<br>
 
 ### Easy Installation of NeoSR:
 
-1. Download the **neosr.bat** file and place it in the desired folder where you want NeoSR to be installed.
+1. Download the **easy-install_neosr.bat** file and `place it in the desired folder where you want NeoSR to be installed`. Don't move the folder after installation!
 
-2. Double-click **neosr.bat** to initiate the installation process. This script will automatically download Miniconda and install all necessary dependencies in silent mode. You can modify the settings in the bat file according to your preferences.
+2. Double-click **easy-install_neosr.bat** to initiate the installation process. This script will automatically download Miniconda and install all necessary dependencies in silent mode. You can modify the settings in the bat file according to your preferences.
 
 ***
 
 ### Running NeoSR:
 
-1. Move the run-neosr.bat file to the NeoSR installation folder and run **run-neosr.bat**, it will launch NeoSR from the cmd and ju just paste the specified file path to your training yml-file.
+1. Move the **run-neosr.bat** file to the NeoSR installation folder, run **run-neosr.bat**, it will launch NeoSR from the cmd and ju just paste the specified file path to your training yml-file.
