@@ -21,8 +21,13 @@ NeoSR + packaging<br>
 
 2. Double-click **easy-install_neosr.bat** to initiate the installation process. This script will automatically download Miniconda and install all necessary dependencies in silent mode. You can modify the settings in the bat file according to your preferences.
 
+![image](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/1a3fd2bf-0253-47de-8d9e-1671c90bb31f)
+
+
 ***
 
 ### Running NeoSR:
 
 1. Move the **run-neosr.bat** file to the NeoSR installation folder, run **run-neosr.bat**, it will launch NeoSR from the cmd and ju just paste the specified file path to your training yml-file.
+
+![image](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/4225a641-1e20-4abd-83b6-0ed36a435ad4)
