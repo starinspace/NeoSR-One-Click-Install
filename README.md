@@ -4,10 +4,10 @@ No files are hosted here they are pulled from muslll's page.
 
 ***
  
-This bat-file do install:<br>
-Miniconda (silent mode) + Create enviroment (called NeoSR in Conda)<br>
-Pytorch for Nvidea<br>
-NeoSR + packaging<br>
+#### This bat-file do install:<br>
+1. Miniconda (silent mode) + Create enviroment (called NeoSR in Conda)<br>
+2. Pytorch for Nvidea<br>
+3. NeoSR + packaging<br>
 
 ***
 
