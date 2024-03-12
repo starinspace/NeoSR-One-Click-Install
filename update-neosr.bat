@@ -6,5 +6,6 @@ call conda activate NeoSR
 git pull origin master
 
 pip install -e .
+pip install packaging
 
 pause
