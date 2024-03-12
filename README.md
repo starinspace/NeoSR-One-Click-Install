@@ -29,3 +29,7 @@ No files are hosted here they are pulled from muslll's page.
 ![image](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/4225a641-1e20-4abd-83b6-0ed36a435ad4)
 
 ***
+
+### Update NeoSR:
+
+1. Run **update-neosr.bat** when a new release is available, simply run this file to update and install the latest dependencies.
