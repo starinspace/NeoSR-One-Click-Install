@@ -5,7 +5,9 @@ call conda activate NeoSR
 
 git pull origin master
 
+conda install python=3.12
+conda update pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
+
 pip install -e .
 pip install packaging
-
 pause
