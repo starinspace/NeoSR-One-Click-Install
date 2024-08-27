@@ -10,10 +10,10 @@ call conda activate NeoSR
 git pull origin master
 
 :: Install or update Python to version 3.12 in the Conda environment
-conda install python=3.12
+conda install python=3.12 --yes
 
 :: Install PyTorch, torchvision, and CUDA 11.8 for GPU acceleration from the specified channels
-conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia --yes
 
 :: Install the Python package located in the current directory in editable mode
 pip install -e .
