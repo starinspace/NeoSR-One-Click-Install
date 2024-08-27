@@ -21,7 +21,7 @@ This batch file automates the following tasks:
 
 2. Double-click **easy-install_neosr.bat** to begin the installation. This script will silently install Miniconda and all required dependencies. You can customize settings within the batch file to suit your preferences.
 
-![Installation Process](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/1a3fd2bf-0253-47de-8d9e-1671c90bb31f)
+![Installation Process](https://i.ibb.co/PFpqhNt/01.png)
 
 ***
 
@@ -29,7 +29,7 @@ This batch file automates the following tasks:
 
 1. Move the **run-neosr.bat** file to the NeoSR installation directory. Execute **run-neosr.bat** to launch NeoSR via the command line. From there, you can **paste the file path** or **drag-and-drop** the desired file into the command prompt to specify your [training toml file](https://github.com/muslll/neosr/tree/master/options).
 
-![Running NeoSR](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/4225a641-1e20-4abd-83b6-0ed36a435ad4)
+![Running NeoSR](https://i.ibb.co/4m9gPQ8/02.png)
 
 ***
 
