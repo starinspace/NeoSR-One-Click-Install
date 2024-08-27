@@ -48,6 +48,4 @@ This batch file automates the following tasks:
 conda remove --name NeoSR --all
 ```
 
-2. Then run the update-neosr.bat again.
-
 ***
