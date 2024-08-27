@@ -17,32 +17,25 @@ This batch file automates the following tasks:
 
 ### **Easy Installation Steps**
 
-1. Download the **easy-install_neosr.bat** file and `place it in the folder where you want NeoSR to be installed`. Ensure that the folder remains in place after installation.
+1. Download the **install-neosr.bat** file and `place it in the folder where you want NeoSR to be installed`. Ensure that the folder remains in place after installation.
 
-2. Double-click **easy-install_neosr.bat** to begin the installation. This script will silently install Miniconda and all required dependencies. You can customize settings within the batch file to suit your preferences.
+2. Double-click **install-neosr.bat** to begin the installation. This script will silently install Miniconda and all required dependencies. You can customize settings within the batch file to suit your preferences.
 
 ![Installation Process](https://i.ibb.co/PFpqhNt/01.png)
 
 ***
 
-### **Updating NeoSR**
+### **Running or Update NeoSR**
 
-1. To update NeoSR to the latest version, first run **update-batch-files.bat** to update to latest bat-files.
-2. Then simply run **update-neosr.bat**. This will download the latest release and update any necessary dependencies.
+1. Move the **`neosr-manager.bat`** file to the NeoSR installation directory and execute it to launch NeoSR via the command line. You can then **paste** the file path or **drag-and-drop** the desired file into the command prompt to specify your [training TOML file](https://github.com/muslll/neosr/tree/master/options). The script also handles updates for batch files and installation components; remember to run *Update NeoSR* afterward to complete the update.
 
-***
-
-### **Running NeoSR**
-
-1. Move the **launch-neosr.bat** file to the NeoSR installation directory. Execute **launch-neosr.bat** to launch NeoSR via the command line. From there, you can **paste the file path** or **drag-and-drop** the desired file into the command prompt to specify your [training toml file](https://github.com/muslll/neosr/tree/master/options).
-
-![Running NeoSR](https://i.ibb.co/4m9gPQ8/02.png)
+<img src="https://i.ibb.co/k4vqXzf/image.png" width="400" /><img src="https://i.ibb.co/DQfRjB0/image.png" width="400" />
 
 ***
 
 ### **Uninstall**
 
-1. If you want to uninstall/remove/delete the enviroment you can use this command in cmd:
+1. If you want to uninstall/remove/delete the enviroment you can use this command in cmd (will soon be added in bat-file)
 
 ```cmd
 "%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
