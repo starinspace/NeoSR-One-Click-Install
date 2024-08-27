@@ -25,6 +25,13 @@ This batch file automates the following tasks:
 
 ***
 
+### **Updating NeoSR**
+
+1. To update NeoSR to the latest version, first run **update-one-click-install.bat** to update to latest bat-files.
+2. Then simply run **update-neosr.bat**. This will download the latest release and update any necessary dependencies.
+
+***
+
 ### **Running NeoSR**
 
 1. Move the **run-neosr.bat** file to the NeoSR installation directory. Execute **run-neosr.bat** to launch NeoSR via the command line. From there, you can **paste the file path** or **drag-and-drop** the desired file into the command prompt to specify your [training toml file](https://github.com/muslll/neosr/tree/master/options).
@@ -33,13 +40,7 @@ This batch file automates the following tasks:
 
 ***
 
-### **Updating NeoSR**
-
-1. To update NeoSR to the latest version, simply run **update-neosr.bat**. This will download the latest release and update any necessary dependencies.
-
-***
-
-### **Having problem with enviroment in conda**
+### **Uninstall**
 
 1. If you want to uninstall/remove/delete the enviroment you can use this command in cmd:
 
