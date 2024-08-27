@@ -34,7 +34,7 @@ This batch file automates the following tasks:
 
 ### **Running NeoSR**
 
-1. Move the **run-neosr.bat** file to the NeoSR installation directory. Execute **run-neosr.bat** to launch NeoSR via the command line. From there, you can **paste the file path** or **drag-and-drop** the desired file into the command prompt to specify your [training toml file](https://github.com/muslll/neosr/tree/master/options).
+1. Move the **launch-neosr.bat** file to the NeoSR installation directory. Execute **launch-neosr.bat** to launch NeoSR via the command line. From there, you can **paste the file path** or **drag-and-drop** the desired file into the command prompt to specify your [training toml file](https://github.com/muslll/neosr/tree/master/options).
 
 ![Running NeoSR](https://i.ibb.co/4m9gPQ8/02.png)
 
