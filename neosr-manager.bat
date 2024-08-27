@@ -34,7 +34,7 @@ cls
 curl -O "https://raw.githubusercontent.com/starinspace/NeoSR-One-Click-Install/main/neosr-manager.bat"
 echo Scripts downloaded successfully.
 pause
-goto start
+goto end
 
 :update_neosr
 @echo off
