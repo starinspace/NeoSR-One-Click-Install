@@ -41,12 +41,11 @@ This batch file automates the following tasks:
 
 ### **Having problem with enviroment in conda**
 
-1. Have you installed from earlier One-Click-Install, you might need to remove the old enviroment, go to CMD and use this command:
+1. If you want to uninstall/remove/delete the enviroment you can use this command in cmd:
 
 ```cmd
 "%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
 conda remove --name NeoSR --all
-conda create --name NeoSR 
 ```
 
 2. Then run the update-neosr.bat again.
