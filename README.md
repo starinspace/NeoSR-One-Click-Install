@@ -24,7 +24,7 @@ No files are hosted here they are pulled from muslll's page.
 
 ### Running NeoSR:
 
-1. Move the **run-neosr.bat** file to the NeoSR installation folder, run **run-neosr.bat**, it will launch NeoSR from the cmd and ju just paste the specified file path to your [training yml-file](https://github.com/muslll/neosr/tree/master/options).
+1. Move the **run-neosr.bat** file to the NeoSR installation folder, run **run-neosr.bat**, it will launch NeoSR from the cmd and ju just **paste path to filename** or **drag-and-drop** the specified file path to your [training toml-file](https://github.com/muslll/neosr/tree/master/options).
 
 ![image](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/4225a641-1e20-4abd-83b6-0ed36a435ad4)
 
