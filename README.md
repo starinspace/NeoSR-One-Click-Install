@@ -27,7 +27,7 @@ This batch file automates the following tasks:
 
 ### **Updating NeoSR**
 
-1. To update NeoSR to the latest version, first run **update-one-click-install.bat** to update to latest bat-files.
+1. To update NeoSR to the latest version, first run **update-batch-files.bat** to update to latest bat-files.
 2. Then simply run **update-neosr.bat**. This will download the latest release and update any necessary dependencies.
 
 ***
