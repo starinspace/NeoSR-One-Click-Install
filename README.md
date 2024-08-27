@@ -36,3 +36,15 @@ This batch file automates the following tasks:
 ### **Updating NeoSR**
 
 1. To update NeoSR to the latest version, simply run **update-neosr.bat**. This will download the latest release and update any necessary dependencies.
+
+***
+
+### **Having problem with enviroment in conda**
+
+Have you installed from earlier One-Click-Install, you might need to remove the old enviroment, go to CMD and use this command:
+
+```cmd
+call "%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
+conda remove --name NeoSR --all
+conda create --name NeoSR 
+```
