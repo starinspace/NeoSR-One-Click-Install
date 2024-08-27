@@ -1,35 +1,38 @@
-# NeoSR-One-Click-Install
-One-click installation of https://github.com/muslll/neosr<br>
-No files are hosted here they are pulled from muslll's page.
+# **NeoSR One-Click Install**
+
+A one-click solution for installing [NeoSR](https://github.com/muslll/neosr).  
+No files are hosted here; all necessary files are pulled directly from the original repository by **muslll**.
 
 ***
  
-#### This bat-file do install:<br>
-1. Miniconda (silent mode) + Create enviroment (called NeoSR in Conda)<br>
-2. Install Pytorch for Nvidia<br>
-3. Install NeoSR from Github + packaging<br>
+### **Installation Overview**
+
+This batch file automates the following tasks:
+
+1. **Miniconda Installation:** Installs Miniconda in silent mode and creates a Conda environment named `NeoSR`.
+2. **PyTorch Installation:** Installs PyTorch with NVIDIA GPU support.
+3. **NeoSR Installation:** Clones the NeoSR repository from GitHub and packages it for immediate use.
 
 ***
 
-### Easy Installation of NeoSR:
+### **Easy Installation Steps**
 
-1. Download the **easy-install_neosr.bat** file and `place it in the desired folder where you want NeoSR to be installed`. Don't move the folder after installation!
+1. Download the **easy-install_neosr.bat** file and `place it in the folder where you want NeoSR to be installed`. Ensure that the folder remains in place after installation.
 
-2. Double-click **easy-install_neosr.bat** to initiate the installation process. This script will automatically download Miniconda and install all necessary dependencies in silent mode. You can modify the settings in the bat file according to your preferences.
+2. Double-click **easy-install_neosr.bat** to begin the installation. This script will silently install Miniconda and all required dependencies. You can customize settings within the batch file to suit your preferences.
 
-![image](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/1a3fd2bf-0253-47de-8d9e-1671c90bb31f)
-
-
-***
-
-### Running NeoSR:
-
-1. Move the **run-neosr.bat** file to the NeoSR installation folder, run **run-neosr.bat**, it will launch NeoSR from the cmd and ju just **paste path to filename** or **drag-and-drop** the specified file path to your [training toml-file](https://github.com/muslll/neosr/tree/master/options).
-
-![image](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/4225a641-1e20-4abd-83b6-0ed36a435ad4)
+![Installation Process](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/1a3fd2bf-0253-47de-8d9e-1671c90bb31f)
 
 ***
 
-### Update NeoSR:
+### **Running NeoSR**
 
-1. Run **update-neosr.bat** when a new release is available, simply run this file to update and install the latest dependencies.
+1. Move the **run-neosr.bat** file to the NeoSR installation directory. Execute **run-neosr.bat** to launch NeoSR via the command line. From there, you can **paste the file path** or **drag-and-drop** the desired file into the command prompt to specify your [training toml file](https://github.com/muslll/neosr/tree/master/options).
+
+![Running NeoSR](https://github.com/starinspace/NeoSR-One-Click-Install/assets/56514044/4225a641-1e20-4abd-83b6-0ed36a435ad4)
+
+***
+
+### **Updating NeoSR**
+
+1. To update NeoSR to the latest version, simply run **update-neosr.bat**. This will download the latest release and update any necessary dependencies.
