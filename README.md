@@ -44,7 +44,7 @@ This batch file automates the following tasks:
 Have you installed from earlier One-Click-Install, you might need to remove the old enviroment, go to CMD and use this command:
 
 ```cmd
-call "%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
+"%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
 conda remove --name NeoSR --all
 conda create --name NeoSR 
 ```
