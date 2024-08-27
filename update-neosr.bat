@@ -1,25 +1,27 @@
-@echo off
+@echo on
 
-:: Activate the Miniconda environment
-call "%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
+rem Activate the Miniconda environment
+call "%USERPROFILE%\miniconda3\Scripts\activate.bat" "NeoSR" && (
 
-:: Activate the specific Conda environment named NeoSR
-call conda activate NeoSR
+    rem Install or update Python to version 3.12 in the Conda environment
+    conda install python=3.12 --yes && (
+    
+        rem Install PyTorch, torchvision, and CUDA 11.8 for GPU acceleration from the specified channels
+        conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia --yes && (
+        
+            rem Pull the latest changes from the master branch of the Git repository
+            git pull origin master && (
+            
+                rem Install the Python package located in the current directory in editable mode
+                pip install -e . && (
+                
+                    rem Install the packaging library for versioning and packaging tasks
+                    pip install packaging
+                )
+            )
+        )
+    )
+)
 
-:: Pull the latest changes from the master branch of the Git repository
-git pull origin master
-
-:: Install or update Python to version 3.12 in the Conda environment
-conda install python=3.12 --yes
-
-:: Install PyTorch, torchvision, and CUDA 11.8 for GPU acceleration from the specified channels
-conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia --yes
-
-:: Install the Python package located in the current directory in editable mode
-pip install -e .
-
-:: Install the packaging library for versioning and packaging tasks
-pip install packaging
-
-:: Pause the script to allow the user to review the output before closing
+rem Pause the script to allow the user to review the output before closing
 pause
