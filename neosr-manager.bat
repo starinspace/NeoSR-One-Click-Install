@@ -84,7 +84,7 @@ echo Starting training with the following configuration file:
 echo %FILEPATH%
 echo.
 start python train.py --auto_resume -opt "%FILEPATH%"
-pause
+timeout /t 5
 goto end
 
 :end
