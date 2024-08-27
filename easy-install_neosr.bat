@@ -6,12 +6,24 @@ del miniconda.exe
 
 timeout /t 1
 
-%USERPROFILE%\miniconda3\Scripts\activate.bat %USERPROFILE%\miniconda3
+"%USERPROFILE%\miniconda3\Scripts\activate.bat" "%USERPROFILE%\miniconda3"
 
-conda create --name NeoSR python=3.12
-conda activate NeoSR
-conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
-git clone https://github.com/muslll/neosr
-cd neosr
-pip install -e .
-pip install packaging
+rem Create and activate the Conda environment, then install packages
+conda create --name NeoSR python=3.12 --yes && (
+    conda activate NeoSR && (
+        conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia --yes && (
+        
+            rem Clone the Git repository and install the package
+            git clone https://github.com/muslll/neosr && (
+                cd neosr && (
+                    pip install -e . && (
+                        pip install packaging
+                    )
+                )
+            )
+        )
+    )
+)
+
+rem Pause the script to allow the user to review the output before closing
+pause
