@@ -17,20 +17,28 @@ set "TEMP_UPDATE=%TEMP%\update-neosr.bat"
 curl -o "%TEMP_RUN%" "%URL_RUN%"
 curl -o "%TEMP_UPDATE%" "%URL_UPDATE%"
 
-:: Compare and replace if necessary
-for %%F in ("%FILE_RUN%" "%FILE_UPDATE%") do (
-    if not exist "%%F" (
-        :: If file does not exist locally, replace it with the temp file
-        echo File %%F does not exist. Downloading...
-        move /Y "%TEMP_RUN%" "%%F" >nul
-    ) else (
-        :: Perform binary comparison
-        fc /b "%%F" "%TEMP_RUN%" >nul
-        if errorlevel 1 (
-            echo Updating %%F...
-            move /Y "%TEMP_RUN%" "%%F" >nul
-        )
+:: Compare and replace run-neosr.bat if necessary
+if exist "%FILE_RUN%" (
+    fc /b "%FILE_RUN%" "%TEMP_RUN%" >nul
+    if errorlevel 1 (
+        echo Updating %FILE_RUN%...
+        move /Y "%TEMP_RUN%" "%FILE_RUN%" >nul
     )
+) else (
+    echo File %FILE_RUN% does not exist. Downloading...
+    move /Y "%TEMP_RUN%" "%FILE_RUN%" >nul
+)
+
+:: Compare and replace update-neosr.bat if necessary
+if exist "%FILE_UPDATE%" (
+    fc /b "%FILE_UPDATE%" "%TEMP_UPDATE%" >nul
+    if errorlevel 1 (
+        echo Updating %FILE_UPDATE%...
+        move /Y "%TEMP_UPDATE%" "%FILE_UPDATE%" >nul
+    )
+) else (
+    echo File %FILE_UPDATE% does not exist. Downloading...
+    move /Y "%TEMP_UPDATE%" "%FILE_UPDATE%" >nul
 )
 
 :: Activate the Miniconda environment
